@@ -20,21 +20,21 @@ body {
     padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilos do cabeçalho */
-.cabeçalho {
+/* Estilos do header */
+.header {
     background-color: #333333; /* Fundo cinza escuro */
     color: #FFFFFF; /* Texto branco */
     text-align: center; /* Centraliza o texto */
     padding: 20px 0; /* Espaçamento interno superior e inferior */
 }
 
-.cabeçalho .logo {
+.header .logo {
     font-size: 3rem; /* Tamanho da fonte do logo */
     margin-bottom: 10px; /* Espaçamento inferior */
     color: #FF6347; /* Cor do logo vermelho tomate */
 }
 
-.cabeçalho p {
+.header p {
     font-size: 1.2rem; /* Tamanho da fonte do subtítulo */
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 /* Estilos dos posts individuais */
-.post-individual {
+.post {
     background-color: #FFFFFF; /* Fundo branco */
     padding: 20px; /* Espaçamento interno */
     margin-bottom: 20px; /* Espaçamento inferior */
@@ -72,13 +72,13 @@ body {
 }
 
 /* Estilos para o título dos posts */
-.post-individual h2 {
+.post h2 {
     font-size: 1.8rem; /* Tamanho da fonte do título */
     margin-bottom: 10px; /* Espaçamento inferior */
 }
 
 /* Estilos para os parágrafos dos posts */
-.post-individual p {
+.post p {
     font-size: 1rem; /* Tamanho da fonte */
     margin-bottom: 10px; /* Espaçamento inferior */
 }
@@ -101,8 +101,8 @@ body {
     transform: translateY(-3px); /* Leve elevação ao passar o mouse */
 }
 
-/* Estilos do rodapé */
-.rodapé {
+/* Estilos do footer */
+.footer {
     background-color: #333333; /* Fundo cinza escuro */
     color: #FFFFFF; /* Texto branco */
     text-align: center; /* Centraliza o texto */
