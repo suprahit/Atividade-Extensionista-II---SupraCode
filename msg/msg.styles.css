@@ -1,0 +1,181 @@
+/* Estilos basicos e reset */
+* {
+    margin: 0; /* Remove margens padrao */
+    padding: 0; /* Remove preenchimentos padrao */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura dos elementos */
+}
+
+/* Estilos do corpo da pagina */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura maxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaco interno */
+}
+
+/* Estilos do cabecalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaco interno superior e inferior */
+}
+
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logo */
+    margin-bottom: 10px; /* Espaco inferior */
+    color: #FF6347; /* Cor do logo vermelho tomate */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte para o titulo */
+}
+
+/* Estilos da secao de mensagens */
+.mensagens {
+    display: flex; /* Alinha os elementos lado a lado */
+    justify-content: center; /* Centraliza o conteudo horizontalmente */
+    padding: 20px 0; /* Espaco superior e inferior */
+}
+
+/* Contêiner de mensagens com lista e chat */
+.mensagens-container {
+    display: flex; /* Alinha os editores e a visualizacao lado a lado */
+    width: 100%; /* Largura total do contêiner */
+    max-width: 1200px; /* Largura maxima */
+}
+
+/* Estilos para a lista de conversas */
+.conversas {
+    width: 30%; /* Largura de 30% da tela */
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    padding: 15px; /* Espaco interno */
+    border-right: 1px solid #CCCCCC; /* Borda cinza clara à direita */
+    height: 80vh; /* Altura da lista */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessario */
+}
+
+.conversas h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do titulo */
+    margin-bottom: 10px; /* Espaco inferior */
+}
+
+.conversas ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+.conversa {
+    margin-bottom: 10px; /* Espaco inferior */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaco interno */
+    background-color: #F9F9F9; /* Cor de fundo ligeiramente diferente */
+}
+
+.conversa a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333333; /* Cor do texto dos links */
+}
+
+.conversa p {
+    margin: 5px 0; /* Margens superior e inferior */
+}
+
+/* Estilos para a janela de chat */
+.chat {
+    width: 70%; /* Largura de 70% da tela */
+    padding: 15px; /* Espaco interno */
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    border-radius: 5px; /* Bordas arredondadas */
+    height: 80vh; /* Altura da janela de chat */
+    display: flex; /* Alinha os elementos */
+    flex-direction: column; /* Organiza verticalmente */
+}
+
+.chat-window {
+    display: flex; /* Alinha os elementos */
+    flex-direction: column; /* Organiza verticalmente */
+    height: 100%; /* Altura total do contêiner */
+}
+
+.chat-window h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do titulo */
+    margin-bottom: 10px; /* Espaco inferior */
+}
+
+.mensagens-caixa {
+    flex: 1; /* Preenche o espaco disponivel */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessario */
+    padding: 10px; /* Espaco interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #F9F9F9; /* Cor de fundo ligeiramente diferente */
+}
+
+.mensagem {
+    margin-bottom: 10px; /* Espaco inferior */
+}
+
+.mensagem p {
+    padding: 10px; /* Espaco interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    max-width: 75%; /* Largura maxima */
+}
+
+/* Estilos para mensagens recebidas e enviadas */
+.mensagem.recebida p {
+    background-color: #E0E0E0; /* Cor de fundo cinza claro para mensagens recebidas */
+    align-self: flex-start; /* Alinha à esquerda */
+}
+
+.mensagem.enviada p {
+    background-color: #FF6347; /* Cor de fundo vermelho tomate para mensagens enviadas */
+    color: #FFFFFF; /* Cor do texto branco */
+    align-self: flex-end; /* Alinha à direita */
+}
+
+/* Estilos para o formulario de mensagens */
+.mensagem-form {
+    display: flex; /* Alinha os elementos */
+    flex-direction: column; /* Organiza verticalmente */
+    margin-top: 10px; /* Espaco superior */
+}
+
+.mensagem-form textarea {
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaco interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaco inferior */
+}
+
+.mensagem-form button {
+    align-self: flex-end; /* Alinha à direita */
+    padding: 10px 15px; /* Espaco interno */
+    background-color: #FF6347; /* Cor de fundo vermelho tomate */
+    color: #FFFFFF; /* Cor do texto branco */
+    border: none; /* Remove borda padrao */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mao */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.mensagem-form button:hover {
+    background-color: #333333; /* Cor de fundo cinza escuro ao passar o mouse */
+}
+
+/* Estilos do rodape */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaco interno superior e inferior */
+}

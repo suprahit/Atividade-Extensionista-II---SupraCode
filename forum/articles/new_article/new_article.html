@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Aula ou Matéria</title>
+    <!-- Link para a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="new_article.styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com o título da página -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">&lt; Publicar Aula &gt;</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal com o editor de Markdown e visualização -->
+    <main class="conteúdo-principal">
+        <!-- Contêiner do editor de Markdown -->
+        <div class="container-editor">
+            <h2>Editor de Markdown</h2>
+            <textarea id="editor-markdown" placeholder="Escreva seu conteúdo em Markdown aqui..."></textarea>
+        </div>
+        <!-- Contêiner da visualização do Markdown -->
+        <div class="container-visualização">
+            <h2>Visualização</h2>
+            <div id="visualização-markdown" class="visualização">
+                <!-- A visualização do Markdown será exibida aqui -->
+                <p>Visualização em tempo real será exibida aqui.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SupraCode. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

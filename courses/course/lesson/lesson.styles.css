@@ -1,0 +1,244 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do logotipo no cabeçalho */
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+/* Estilos do texto de descrição do cabeçalho */
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+
+/* Estilos da seção da aula */
+.aula {
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do cabeçalho da aula */
+.cabecalho-aula {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da aula */
+.cabecalho-aula h2 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos do conteúdo principal da aula */
+.conteudo-aula {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilos do container do vídeo */
+.video-container {
+    text-align: center; /* Centraliza o vídeo */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do iframe do vídeo */
+.video-container iframe {
+    width: 100%; /* Largura total do contêiner */
+    max-width: 800px; /* Largura máxima do vídeo */
+    height: 450px; /* Altura do vídeo */
+    border: none; /* Remove a borda do iframe */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos do botão para a próxima aula */
+.proxima-aula-btn {
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o texto do botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para mudanças de cor e transformação */
+}
+
+/* Estilos do botão ao passar o mouse */
+.proxima-aula-btn:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+    transform: translateY(-3px); /* Move o botão para cima */
+}
+
+/* Estilos da transcrição da aula */
+.transcricao {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da transcrição */
+.transcricao h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border-bottom: 2px solid #FF6347; /* Linha inferior do título */
+    padding-bottom: 5px; /* Espaçamento inferior do título */
+    color: #333333; /* Cor do título */
+}
+
+/* Estilos do parágrafo da transcrição */
+.transcricao p {
+    font-size: 1rem; /* Tamanho da fonte do texto */
+    line-height: 1.8; /* Altura da linha */
+    color: #555555; /* Cor do texto */
+}
+
+/* Estilos da lista de próximas aulas */
+.proximas-aulas {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da lista de próximas aulas */
+.proximas-aulas h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do título */
+}
+
+/* Estilos da lista de próximas aulas */
+.proximas-aulas ul {
+    list-style-type: none; /* Remove marcadores da lista */
+}
+
+/* Estilos dos itens da lista */
+.proximas-aulas ul li {
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos dos links das próximas aulas */
+.proximas-aulas ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #FF6347; /* Cor do link */
+    font-weight: bold; /* Negrito */
+    transition: color 0.3s ease; /* Transição suave para mudanças de cor */
+}
+
+/* Estilos dos links ao passar o mouse */
+.proximas-aulas ul li a:hover {
+    color: #333333; /* Cor do link ao passar o mouse */
+}
+
+/* Estilos da seção de comentários */
+.comentarios {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da seção de comentários */
+.comentarios h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do título */
+}
+
+/* Estilos de cada comentário */
+.comentario {
+    background-color: #F9F9F9; /* Fundo cinza claro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos do nome do autor do comentário */
+.comentario p strong {
+    color: #333333; /* Cor do nome */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilos da seção de fazer pergunta */
+.fazer-pergunta {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da seção de fazer pergunta */
+.fazer-pergunta h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do título */
+}
+
+/* Estilos do formulário de fazer pergunta */
+.fazer-pergunta form {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Alinhamento vertical */
+}
+
+/* Estilos da textarea de fazer pergunta */
+.fazer-pergunta textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Estilos do botão de comentar */
+.comentar-btn {
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave para mudanças de cor */
+}
+
+/* Estilos do botão ao passar o mouse */
+.comentar-btn:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do texto do rodapé */
+.footer p {
+    font-size: 1rem; /* Tamanho da fonte */
+}

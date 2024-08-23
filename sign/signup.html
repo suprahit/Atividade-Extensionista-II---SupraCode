@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - SupraCode</title>
+    <!-- Link para a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="signup.styles.css">
+</head>
+<body>
+    <!-- Container principal para a criação de conta -->
+    <div class="container-criar-conta">
+        <div class="container-formulario">
+            <!-- Título da página de criação de conta -->
+            <h2>Criar Conta</h2>
+            <!-- Formulário para criar uma nova conta -->
+            <form action="#" method="post">
+                <!-- Campo de entrada para nome de usuário -->
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" name="username" required>
+
+                <!-- Campo de entrada para o email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Campo de entrada para senha -->
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+
+                <!-- Campo de entrada para confirmação de senha -->
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <!-- Botão para enviar o formulário e criar a conta -->
+                <button type="submit">Criar Conta</button>
+            </form>
+            <!-- Seção para login caso o usuário já tenha uma conta -->
+            <div class="prompt-login">
+                <p>Já tem uma conta? <a href="#">Entre aqui</a></p>
+            </div>
+            <!-- Seção para voltar para a tela inicial -->
+            <div class="voltar-inicial">
+                <a href="#">Voltar para a tela inicial</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

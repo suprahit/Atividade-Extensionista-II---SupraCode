@@ -1,0 +1,82 @@
+/* Estilos básicos e reset para garantir uma base consistente */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da viewport */
+    display: flex; /* Exibe o corpo como um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logo */
+    color: #FF6347; /* Cor do logo vermelho tomate */
+}
+
+/* Estilos do conteúdo principal */
+.conteúdo-principal {
+    display: flex; /* Exibe o conteúdo principal como um contêiner flexível */
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    padding: 20px; /* Espaçamento interno */
+    gap: 20px; /* Espaçamento entre os contêineres do editor e da visualização */
+}
+
+/* Estilos dos contêineres do editor e da visualização */
+.container-editor, .container-visualização {
+    width: 50%; /* Largura de 50% para cada contêiner */
+}
+
+/* Estilos dos títulos dentro dos contêineres */
+.container-editor h2, .container-visualização h2 {
+    font-size: 1.5rem; /* Tamanho da fonte dos títulos */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos para o textarea (editor de Markdown) */
+textarea {
+    width: 100%; /* Largura completa do contêiner pai */
+    height: calc(100vh - 140px); /* Altura ajustada para não sobrepor o rodapé */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Roboto Mono', monospace; /* Fonte monoespaçada para o editor */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #FFFFFF; /* Fundo branco */
+    resize: none; /* Desativa a opção de redimensionamento */
+}
+
+/* Estilos para a área de visualização do Markdown */
+.visualização {
+    width: 100%; /* Largura completa do contêiner pai */
+    height: calc(100vh - 140px); /* Altura ajustada para não sobrepor o rodapé */
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

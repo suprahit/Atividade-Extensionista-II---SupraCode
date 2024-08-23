@@ -1,0 +1,109 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte para o logo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logo vermelho tomate */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte para o slogan */
+}
+
+/* Estilos do conteúdo principal */
+.conteudo-principal {
+    display: flex; /* Alinha os elementos lado a lado */
+    height: calc(100vh - 140px); /* Altura da tela menos altura do cabeçalho e rodapé */
+}
+
+/* Estilos do container dos editores */
+.container-editores {
+    width: 50%; /* Largura de 50% da tela */
+    padding: 20px; /* Espaçamento interno */
+    overflow: hidden; /* Oculta o conteúdo que excede o contêiner */
+}
+
+/* Estilos de cada editor */
+.editor-html,
+.editor-css {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.editor-html h2,
+.editor-css h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do título do editor */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+textarea {
+    width: 100%; /* Largura total do contêiner */
+    height: 150px; /* Altura fixa */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Roboto Mono', monospace; /* Fonte monoespaçada para o código */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    resize: none; /* Remove a capacidade de redimensionar */
+}
+
+/* Estilos do container de visualização */
+.container-preview {
+    width: 50%; /* Largura de 50% da tela */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    border-left: 1px solid #CCCCCC; /* Borda cinza clara à esquerda */
+    overflow: hidden; /* Oculta o conteúdo que excede o contêiner */
+}
+
+.container-preview h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do título da visualização */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+.preview {
+    width: 100%; /* Largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    padding: 20px; /* Espaçamento interno */
+    overflow: auto; /* Adiciona rolagem se necessário */
+}
+
+/* Estilos para iframe (se usado) */
+iframe {
+    width: 100%; /* Largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+    border: none; /* Sem borda */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

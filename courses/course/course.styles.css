@@ -1,0 +1,160 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do logotipo no cabeçalho */
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+/* Estilos do texto de descrição do cabeçalho */
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+
+/* Estilos da seção de apresentação do curso */
+.apresentacao-curso {
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do cabeçalho da seção do curso */
+.cabecalho-curso {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos do título da seção do curso */
+.cabecalho-curso h2 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos do slogan do curso */
+.tagline-curso {
+    font-size: 1.2rem; /* Tamanho da fonte do slogan */
+    color: #FF6347; /* Cor do slogan vermelho tomate */
+}
+
+/* Estilos do conteúdo principal da apresentação do curso */
+.conteudo-curso {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilos das seções internas do curso */
+.info-curso, .detalhes-curso, .cronograma-curso, .instrutores-curso {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos dos títulos das seções internas do curso */
+.info-curso h3, .detalhes-curso h3, .cronograma-curso h3, .instrutores-curso h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border-bottom: 2px solid #FF6347; /* Linha inferior do título */
+    padding-bottom: 5px; /* Espaçamento inferior do título */
+    color: #333333; /* Cor do título */
+}
+
+/* Estilos dos parágrafos e listas dentro das seções do curso */
+.info-curso p, .detalhes-curso ul, .cronograma-curso ul, .instrutores-curso {
+    font-size: 1rem; /* Tamanho da fonte dos parágrafos e listas */
+    color: #333333; /* Cor do texto */
+}
+
+/* Remove marcadores e espaçamento de listas */
+.detalhes-curso ul, .cronograma-curso ul {
+    list-style: none; /* Remove os marcadores das listas */
+    padding: 0; /* Remove o preenchimento das listas */
+}
+
+/* Espaçamento inferior dos itens da lista */
+.detalhes-curso li, .cronograma-curso li {
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos dos instrutores */
+.instrutor {
+    display: flex; /* Exibe os instrutores lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos das imagens dos instrutores */
+.instrutor img {
+    border-radius: 50%; /* Bordas arredondadas para a imagem do instrutor */
+    margin-right: 20px; /* Espaçamento à direita */
+    width: 100px; /* Largura fixa da imagem */
+    height: 100px; /* Altura fixa da imagem */
+}
+
+/* Estilos do texto de descrição dos instrutores */
+.info-instrutor h4 {
+    margin-bottom: 5px; /* Espaçamento inferior */
+    font-size: 1.4rem; /* Tamanho da fonte do nome do instrutor */
+}
+
+.info-instrutor p {
+    font-size: 1rem; /* Tamanho da fonte da descrição */
+}
+
+/* Estilos do botão de ação do curso */
+.acao-curso {
+    text-align: center; /* Centraliza o botão */
+}
+
+.acao-curso .btn {
+    display: inline-block; /* Exibe o botão como um bloco inline */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.acao-curso .btn:hover {
+    background-color: #FF4500; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+}
+
+.footer p {
+    font-size: 1rem; /* Tamanho da fonte do texto */
+}

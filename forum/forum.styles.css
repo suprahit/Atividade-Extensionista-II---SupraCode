@@ -1,0 +1,131 @@
+/* Reset básico para remoção de margens e preenchimentos padrão */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logo vermelho tomate */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do subtítulo */
+}
+
+/* Estilos da seção de fórum */
+.forum {
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    padding: 50px 0; /* Espaçamento superior e inferior */
+}
+
+/* Botão para criar novo post */
+.botao-novo-post {
+    display: block; /* Exibe como bloco para centralizar */
+    background-color: #4682B4; /* Fundo azul aço */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 0 auto 30px auto; /* Margem para centralização e espaço inferior */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para fundo e movimento */
+}
+
+.botao-novo-post:hover {
+    background-color: #FF6347; /* Fundo vermelho tomate no hover */
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilos dos posts no fórum */
+.post-forum {
+    background-color: #F9F9F9; /* Fundo cinza claro */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos específicos para "Meus Posts" */
+.post-meu {
+    background-color: #FFF0F0; /* Fundo rosa claro */
+}
+
+/* Estilos para o título dos posts */
+.post-forum h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Texto vermelho tomate */
+}
+
+/* Estilos para informações do autor do post */
+.post-forum .autor {
+    font-size: 0.9rem; /* Tamanho da fonte menor */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #777777; /* Texto cinza claro */
+}
+
+/* Estilos para o corpo dos posts */
+.post-forum p {
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilos para ações do post (responder e curtir) */
+.acoes-post {
+    display: flex; /* Alinha os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.botao-responder, .botao-curtir {
+    display: inline-block; /* Exibe como bloco inline */
+    background-color: #4682B4; /* Fundo azul aço */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado dos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.botao-responder:hover, .botao-curtir:hover {
+    background-color: #FF6347; /* Fundo vermelho tomate no hover */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

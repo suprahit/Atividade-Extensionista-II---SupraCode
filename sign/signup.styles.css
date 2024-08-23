@@ -1,0 +1,125 @@
+/* Reset básico para margem, preenchimento e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte principal Roboto */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilos do contêiner de criação de conta */
+.container-criar-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+}
+
+/* Estilos do formulário de criação de conta */
+.container-formulario {
+    background-color: #FFFFFF; /* Fundo branco do formulário */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px; /* Largura máxima */
+    width: 100%; /* Largura total do contêiner */
+}
+
+/* Estilos do título do formulário */
+.container-formulario h2 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+    text-align: center; /* Centraliza o texto */
+    font-weight: 700; /* Fonte em negrito */
+}
+
+/* Estilos dos rótulos dos campos de entrada */
+.container-formulario label {
+    display: block; /* Exibe o rótulo como bloco */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+    font-weight: 400; /* Fonte regular */
+}
+
+/* Estilos dos campos de entrada */
+.container-formulario input {
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto */
+    box-sizing: border-box; /* Inclui bordas e preenchimento na largura total */
+}
+
+/* Estilos do botão de envio do formulário */
+.container-formulario button {
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto */
+}
+
+/* Estilos do botão ao passar o mouse */
+.container-formulario button:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+    transform: translateY(-3px); /* Leve elevação */
+}
+
+/* Estilos do prompt para login */
+.prompt-login {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #333333; /* Cor do texto cinza escuro */
+    margin-top: 15px; /* Espaçamento superior */
+    font-weight: 400; /* Fonte regular */
+}
+
+/* Estilos do link no prompt de login */
+.prompt-login a {
+    color: #FF6347; /* Texto link vermelho tomate */
+    text-decoration: none; /* Sem sublinhado */
+}
+
+/* Estilos do link ao passar o mouse */
+.prompt-login a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos para o botão de voltar */
+.voltar-inicial {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos do link de voltar à tela inicial */
+.voltar-inicial a {
+    color: #4682B4; /* Texto azul aço */
+    text-decoration: none; /* Sem sublinhado */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilos do link ao passar o mouse */
+.voltar-inicial a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

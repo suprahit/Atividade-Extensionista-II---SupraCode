@@ -1,0 +1,120 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+html, body {
+    height: 100%; /* Garante que o corpo ocupe a altura total da viewport */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* Estilos do contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    flex: 1; /* Faz o contêiner ocupar o espaço restante */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do logotipo no cabeçalho */
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+/* Estilos do texto de descrição do cabeçalho */
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+
+/* Estilos da seção de cursos */
+.cursos {
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do título da seção de cursos */
+.cursos h2 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos da lista de cursos */
+.lista-cursos {
+    display: flex; /* Exibe a lista como um contêiner flexível */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos dos itens individuais de curso */
+.item-curso {
+    background-color: #FFFFFF; /* Fundo branco */
+    border: 1px solid #DDDDDD; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: calc(50% - 20px); /* Largura dos itens com ajuste para o espaçamento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o texto */
+    transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+}
+
+/* Estilos do título do item de curso */
+.item-curso h3 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos dos parágrafos dentro dos itens de curso */
+.item-curso p {
+    font-size: 1rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos dos botões dentro dos itens de curso */
+.item-curso .btn {
+    display: inline-block; /* Exibe como um bloco em linha */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para mudanças de cor e transformação */
+}
+
+/* Estilos do botão ao passar o mouse */
+.item-curso .btn:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+    transform: translateY(-3px); /* Move o botão para cima */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

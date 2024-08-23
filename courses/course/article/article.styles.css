@@ -1,0 +1,97 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do logotipo no cabeçalho */
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+/* Estilos do texto de descrição do cabeçalho */
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+
+/* Estilos da seção do artigo */
+.artigo {
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do título do artigo */
+.artigo h2 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos do parágrafo do artigo */
+.artigo p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos dos subtítulos no artigo */
+.artigo h3 {
+    font-size: 2rem; /* Tamanho da fonte do subtítulo */
+    margin-top: 20px; /* Espaçamento superior */
+    border-bottom: 2px solid #FF6347; /* Linha inferior do subtítulo */
+    padding-bottom: 5px; /* Espaçamento inferior do subtítulo */
+    color: #333333; /* Cor do subtítulo */
+}
+
+/* Estilos da lista no artigo */
+.artigo ul {
+    list-style: disc; /* Marcadores de lista em disco */
+    margin-left: 20px; /* Espaçamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos dos itens da lista no artigo */
+.artigo li {
+    font-size: 1.1rem; /* Tamanho da fonte do item da lista */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos do código no artigo */
+.artigo code {
+    font-family: 'Roboto Mono', monospace; /* Fonte monospace para código */
+    background-color: #F4F4F4; /* Fundo cinza claro para código */
+    padding: 2px 5px; /* Espaçamento interno */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

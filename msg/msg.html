@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens Diretas - SupraCode</title>
+    <!-- Link para a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="msg.styles.css">
+</head>
+<body>
+    <!-- Cabecalho com logo e titulo -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">&lt; SupraCode &gt;</h1>
+            <p>Mensagens Diretas</p>
+        </div>
+    </header>
+
+    <!-- Secao principal de mensagens -->
+    <section class="mensagens">
+        <div class="container">
+            <div class="mensagens-container">
+                <!-- Lista de conversas recentes -->
+                <div class="conversas">
+                    <h2>Conversas Recentes</h2>
+                    <ul>
+                        <!-- Exemplo de conversa -->
+                        <li class="conversa">
+                            <a href="#conversa1">
+                                <p><strong>Lucas Pereira:</strong> Ola, tudo bem?</p>
+                            </a>
+                        </li>
+                        <li class="conversa">
+                            <a href="#conversa2">
+                                <p><strong>Ana Souza:</strong> Sobre o projeto, voce tem novidades?</p>
+                            </a>
+                        </li>
+                        <li class="conversa">
+                            <a href="#conversa3">
+                                <p><strong>Joao Silva:</strong> Vamos marcar uma reuniao?</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Janela de conversa selecionada -->
+                <div class="chat">
+                    <div id="conversa1" class="chat-window">
+                        <h2>Lucas Pereira</h2>
+                        <div class="mensagens-caixa">
+                            <!-- Mensagens recebidas e enviadas -->
+                            <div class="mensagem recebida">
+                                <p>Ola! Tudo certo por aqui, e voce?</p>
+                            </div>
+                            <div class="mensagem enviada">
+                                <p>Estou bem, obrigado. Precisamos discutir o projeto?</p>
+                            </div>
+                        </div>
+                        <form class="mensagem-form">
+                            <!-- Campo para digitar mensagens e botao de envio -->
+                            <textarea rows="3" placeholder="Digite sua mensagem..."></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- Adicione mais blocos de conversa conforme necessario -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodape da pagina -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SupraCode. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

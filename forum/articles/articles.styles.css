@@ -1,0 +1,110 @@
+/* Reset básico para remoção de margens e preenchimentos padrão */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Contêiner centralizado */
+.container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do cabeçalho */
+.cabeçalho {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.cabeçalho .logo {
+    font-size: 3rem; /* Tamanho da fonte do logo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logo vermelho tomate */
+}
+
+.cabeçalho p {
+    font-size: 1.2rem; /* Tamanho da fonte do subtítulo */
+}
+
+/* Estilos da seção de posts */
+.seção-posts {
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Botão para criar um novo post */
+.criar-post-btn {
+    display: block; /* Exibe como bloco para centralizar */
+    margin: 0 auto 20px auto; /* Margem para centralização e espaço inferior */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado dos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para fundo e movimento */
+}
+
+.criar-post-btn:hover {
+    background-color: #333333; /* Fundo cinza escuro no hover */
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilos dos posts individuais */
+.post-individual {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para o título dos posts */
+.post-individual h2 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos para os parágrafos dos posts */
+.post-individual p {
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Botão para ler o post */
+.ler-post-btn {
+    display: inline-block; /* Exibe como bloco inline */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado dos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para a cor de fundo e movimento */
+}
+
+.ler-post-btn:hover {
+    background-color: #333333; /* Fundo cinza escuro no hover */
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+.rodapé {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}

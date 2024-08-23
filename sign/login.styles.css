@@ -1,0 +1,95 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do contêiner de login */
+.login-container {
+    display: flex; /* Alinha o contêiner de login no centro da tela */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilos do contêiner do formulário */
+.formulario-container {
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    width: 100%; /* Largura total do contêiner */
+}
+
+/* Estilos do título do formulário */
+.formulario-container h2 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos dos rótulos do formulário */
+form label {
+    display: block; /* Exibe o rótulo como bloco */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos dos campos de entrada do formulário */
+form input[type="email"],
+form input[type="password"] {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilos do botão de enviar o formulário */
+form button {
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #FF6347; /* Cor de fundo vermelho tomate */
+    color: #FFFFFF; /* Cor do texto branco */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão */
+}
+
+/* Estilos para o botão ao passar o mouse */
+form button:hover {
+    background-color: #e5533c; /* Cor de fundo vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilos para a seção de criar uma nova conta */
+.registrar-prompt {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para a seção de voltar para a tela inicial */
+.voltar-inicial {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.voltar-inicial a {
+    color: #333333; /* Cor do texto cinza escuro */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.voltar-inicial a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}

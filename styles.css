@@ -1,0 +1,168 @@
+/* Reset básico para margem, preenchimento e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte principal */
+    line-height: 1.6; /* Altura da linha */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Container centralizado com largura máxima */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do slogan */
+}
+
+/* Estilos da seção de banner */
+.banner {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.banner-img {
+    width: 100%; /* Largura total do contêiner */
+    max-width: 800px; /* Largura máxima da imagem */
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: opacity 0.5s ease-in-out; /* Transição suave da opacidade */
+    opacity: 0.9; /* Opacidade inicial */
+}
+
+.banner-img:hover {
+    opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+/* Estilos da seção de recursos */
+.features {
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Espaçamento superior e inferior */
+}
+
+.feature {
+    margin-bottom: 30px; /* Espaçamento inferior entre os recursos */
+}
+
+.feature h2 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FFFFFF; /* Texto branco */
+}
+
+.feature p {
+    font-size: 1.1rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #FFFFFF; /* Texto branco */
+}
+
+/* Estilos da seção de chamada para ação (CTA) */
+.cta {
+    background-color: #4682B4; /* Fundo azul aço */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Espaçamento superior e inferior */
+}
+
+.cta h2 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.cta p {
+    font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo dos botões */
+.btn {
+    display: inline-block; /* Exibição em bloco inline */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    text-decoration: none; /* Sem sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para cor e transformação */
+}
+
+.btn:hover {
+    background-color: #333333; /* Fundo cinza escuro ao passar o mouse */
+    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilos para o prompt de login */
+.login-prompt {
+    margin-top: 20px; /* Espaçamento superior */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.login-prompt a {
+    color: #FF6347; /* Cor do link vermelho tomate */
+    text-decoration: none; /* Sem sublinhado */
+}
+
+.login-prompt a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do logotipo */
+    }
+    .header p {
+        font-size: 1rem; /* Reduz o tamanho da fonte do slogan */
+    }
+    .feature h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    }
+    .feature p {
+        font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+    .cta h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+    }
+    .cta p {
+        font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+    .btn {
+        font-size: 1rem; /* Reduz o tamanho da fonte dos botões */
+    }
+    .login-prompt {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do prompt de login */
+    }
+}

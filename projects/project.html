@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Projetos - Editor e Pré-visualização</title>
+    <!-- Link para a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="project.styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com logo e slogan -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">&lt; SupraCode &gt;</h1>
+            <p>Transformando ideias em realidade digital</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="conteudo-principal">
+        <!-- Container dos editores HTML e CSS -->
+        <div class="container-editores">
+            <!-- Editor para código HTML -->
+            <div class="editor-html">
+                <h2>Editor HTML</h2>
+                <textarea readonly>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Exemplo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Bem-vindo ao nosso site!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+            </div>
+            <!-- Editor para código CSS -->
+            <div class="editor-css">
+                <h2>Editor CSS</h2>
+                <textarea readonly>body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF6347;
+}
+
+p {
+    color: #333333;
+}</textarea>
+            </div>
+        </div>
+
+        <!-- Container de visualização do código -->
+        <div class="container-preview">
+            <h2>Pré-visualização</h2>
+            <div class="preview">
+                <!-- Visualização estática com exemplo de conteúdo -->
+                <h1>Olá, Mundo!</h1>
+                <p>Bem-vindo ao nosso site!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SupraCode. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

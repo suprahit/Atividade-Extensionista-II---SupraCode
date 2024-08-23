@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres e a viewport para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo sobre Unidades de CSS</title>
+    
+    <!-- Link para a fonte Roboto do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="article.styles.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <div class="container">
+            <!-- Logotipo e slogan -->
+            <h1 class="logo">&lt; SupraCode &gt;</h1>
+            <p>Transformando ideias em realidade digital</p>
+        </div>
+    </header>
+
+    <!-- Seção do artigo -->
+    <article class="artigo">
+        <div class="container">
+            <!-- Título do artigo -->
+            <h2>Unidades de Medida em CSS</h2>
+            
+            <!-- Introdução ao tema do artigo -->
+            <p>As unidades de medida em CSS são essenciais para definir tamanhos, espaçamentos e layouts de elementos em uma página web. Cada unidade tem seu uso específico e é importante escolher a unidade certa para garantir a responsividade e a acessibilidade do seu design. Neste artigo, vamos explorar algumas das principais unidades de medida usadas em CSS.</p>
+            
+            <!-- Subtítulo e conteúdo sobre unidades absolutas -->
+            <h3>Unidades Absolutas</h3>
+            <p>As unidades absolutas são fixas e não variam com o tamanho da tela. Elas são usadas para medidas precisas e consistentes, independentemente das configurações do dispositivo.</p>
+            <ul>
+                <li><strong>px (pixels):</strong> A unidade de medida mais comum, representando um único ponto na tela. Exemplo: <code>width: 100px;</code></li>
+                <li><strong>pt (pontos):</strong> Usada principalmente em impressão, onde um ponto é igual a 1/72 de uma polegada. Exemplo: <code>font-size: 12pt;</code></li>
+                <li><strong>in (polegadas):</strong> Representa a medida em polegadas. Exemplo: <code>margin: 1in;</code></li>
+                <li><strong>cm (centímetros):</strong> Representa a medida em centímetros. Exemplo: <code>width: 10cm;</code></li>
+                <li><strong>mm (milímetros):</strong> Representa a medida em milímetros. Exemplo: <code>border-width: 5mm;</code></li>
+            </ul>
+
+            <!-- Subtítulo e conteúdo sobre unidades relativas -->
+            <h3>Unidades Relativas</h3>
+            <p>As unidades relativas são baseadas em outras medidas, como o tamanho da fonte ou a largura da tela, o que permite criar designs mais flexíveis e responsivos.</p>
+            <ul>
+                <li><strong>em:</strong> Relativo ao tamanho da fonte do elemento pai. Exemplo: <code>font-size: 2em;</code></li>
+                <li><strong>rem (root em):</strong> Relativo ao tamanho da fonte do elemento raiz (html). Exemplo: <code>padding: 1rem;</code></li>
+                <li><strong>% (percentual):</strong> Relativo ao tamanho do elemento pai. Exemplo: <code>width: 50%;</code></li>
+                <li><strong>vw (viewport width):</strong> Relativo à largura da viewport. 1vw é igual a 1% da largura da viewport. Exemplo: <code>width: 50vw;</code></li>
+                <li><strong>vh (viewport height):</strong> Relativo à altura da viewport. 1vh é igual a 1% da altura da viewport. Exemplo: <code>height: 50vh;</code></li>
+            </ul>
+
+            <!-- Conclusão do artigo -->
+            <h3>Conclusão</h3>
+            <p>Entender as diferentes unidades de medida em CSS é fundamental para criar designs web eficazes e responsivos. A escolha entre unidades absolutas e relativas dependerá das necessidades específicas do projeto e do nível de flexibilidade desejado.</p>
+            <p>Para mais detalhes e práticas recomendadas, consulte a documentação oficial do CSS e experimente diferentes unidades em seus projetos.</p>
+        </div>
+    </article>
+
+    <!-- Rodapé do site -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SupraCode. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

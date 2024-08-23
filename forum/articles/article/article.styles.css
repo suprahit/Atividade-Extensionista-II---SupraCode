@@ -1,0 +1,173 @@
+/* Estilos básicos e reset */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+}
+
+/* Estilos do corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte Roboto para o corpo do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    background-color: #F4F4F4; /* Cor de fundo cinza claro */
+    color: #333333; /* Cor do texto cinza escuro */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da viewport */
+    display: flex; /* Exibe o corpo como um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos do logotipo no cabeçalho */
+.header .logo {
+    font-size: 3rem; /* Tamanho da fonte do logotipo */
+    color: #FF6347; /* Cor do logotipo vermelho tomate */
+}
+
+/* Estilos do conteúdo principal */
+.conteúdo-principal {
+    padding: 20px; /* Espaçamento interno */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    flex: 1; /* Faz com que o conteúdo-principal ocupe o espaço restante */
+}
+
+/* Estilos da seção do artigo */
+.artigo {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Estilos do título do artigo */
+.artigo h2 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos do texto do autor do artigo */
+.artigo .autor {
+    font-size: 1rem; /* Tamanho da fonte do texto do autor */
+    color: #666666; /* Cor do texto cinza médio */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilos dos parágrafos dentro do artigo */
+.artigo p {
+    font-size: 1.1rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #666666; /* Cor do texto cinza médio */
+}
+
+/* Estilos do botão de curtir */
+.botão-curtir {
+    display: inline-block; /* Exibe como um bloco em linha */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para mudanças de cor e transformação */
+}
+
+/* Estilos do botão de curtir ao passar o mouse */
+.botão-curtir:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+    transform: translateY(-3px); /* Move o botão para cima */
+}
+
+/* Estilos da seção de comentários */
+.comentários {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos do título da seção de comentários */
+.comentários h3 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos individuais dos comentários */
+.comentário {
+    border-bottom: 1px solid #CCCCCC; /* Borda inferior cinza clara */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Remove a borda inferior do último comentário */
+.comentário:last-child {
+    border-bottom: none;
+}
+
+/* Estilos do texto dos comentários */
+.comentário p {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #666666; /* Cor do texto cinza médio */
+}
+
+/* Estilos do formulário para comentários */
+.formulário-comentário {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos do título do formulário de comentários */
+.formulário-comentário h4 {
+    font-size: 1.2rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos da área de texto do formulário de comentários */
+.formulário-comentário textarea {
+    width: 100%; /* Largura completa do contêiner pai */
+    height: 100px; /* Altura fixa */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #CCCCCC; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+/* Estilos do botão de enviar comentário */
+.botão-enviar {
+    display: inline-block; /* Exibe como um bloco em linha */
+    background-color: #FF6347; /* Fundo vermelho tomate */
+    color: #FFFFFF; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    margin-top: 10px; /* Espaçamento superior */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para mudanças de cor e transformação */
+}
+
+/* Estilos do botão de enviar comentário ao passar o mouse */
+.botão-enviar:hover {
+    background-color: #333333; /* Fundo cinza escuro */
+    transform: translateY(-3px); /* Move o botão para cima */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
